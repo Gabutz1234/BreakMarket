@@ -1,0 +1,240 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.header a, a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.header a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.header a:hover::after {
+    transform: scaleX(1);
+}
+
+h1{
+    font-size: 48px;
+}
+
+.space{
+    height: 110px;
+    /* background-color: red; */
+}
+
+header{
+    height: 80px;
+    width: 89%;
+    padding-left: 72px;
+    padding-right: 72px;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header > .h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+nav.header{
+    width: 320px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    margin-left: 72px;
+    margin-right: 72px;
+    margin-bottom: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: yellow; */
+}
+
+section > h1{
+    margin-top: 72px;
+    color: black;
+}
+
+section > h2{
+    margin-top: 24px;
+    color: black;
+}
+
+section > p{
+    margin-top: 16px;
+    color: grey;
+}
+
+section > button{
+    margin-top: 32px;
+    margin-right: 24px;
+
+    width: 160px;
+    height: 50px;
+    
+    border-radius: 8px;
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button.primary{
+    background-color: #9900d6;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(153, 0, 214, 0.3);
+}
+
+button.primary:hover {
+    width: 200px;
+    background-color: #aa00ed;
+    box-shadow: 0 6px 18px rgba(153, 0, 214, 0.4);
+}
+
+button.secondary {
+    background-color: white;
+    color: #9900d6;
+    font-weight: bold;
+
+    border: 2px solid #9900d6;
+}
+
+button.secondary:hover {
+    background-color: #f8eaff;
+}
+
+.message{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: greenyellow;
+
+    /* atas kanan bawah kiri */
+    margin: 200px 200px 200px 200px;
+
+    display: flex;
+}
+
+.message > .profile{
+    width: 350px;
+    height: 200px;
+
+    /* margin-right: 24px; */
+
+    background-color: gray;
+    border: 1px solid white;
+}
+
+.message > .chatbox{
+    margin-top: 8px;
+    padding: 24px;
+}
+
+.chatbox > p{
+    padding-top: 16px;
+}
+
+.chatbox .owner{
+    text-align: right;
+    font-style: italic;
+    font-size: small;
+}
+
+.advice{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* background-color: red; */
+    
+    width: 700px;
+
+    margin-top: 210px;
+    margin-bottom: 210px;
+    margin-left: 285px;
+}
+
+.advice > p{
+    margin-top: 16px;
+    color: gray;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.benefits > div{
+    height: 300px;
+    background-color: lightgray;
+}
+
+.benefits > .one, .benefits > .two{
+    background-color: white;
+    padding-top: 56px;
+    padding-left: 56px;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.benefits .one p, .benefits .two p{
+    padding-top: 16px;
+    padding-right: 56px;
+
+    color: gray;
+    font-size: 20px;
+}
+
+.contact{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* width: 100%; */
+    /* height: 480px; */
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 72px;
+
+    display: flex;
+}
+
+.contact > div{
+    margin-right: 80px;
+}
+
+.contact > div > h3{
+    margin-bottom: 16px;
+}
+
+.contact > div > p{
+    padding-left: 8px;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,15 @@
+# Folder
+config/
+images/
+
+# File
+.env
+config.json
+database.php
+note
+
+# Log
+*.log
+
+# Cache
+.cache/
