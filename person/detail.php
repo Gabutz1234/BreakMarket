@@ -21,6 +21,9 @@ $row = mysqli_fetch_assoc($result);
         <button onclick="window.location.href='person.php'">
             kembali
         </button>
+        <button>
+            Edit Head
+        </button>
     </header>
     <section>
         <div class="profile"></div>
